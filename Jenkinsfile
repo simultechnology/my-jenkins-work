@@ -6,5 +6,13 @@ pipeline {
                 echo 'Hello world!'
             }
         }
+        stage( {
+            script {
+                sh """
+                poetry install
+                poetry run isort src
+                """
+            }
+        })
     }
 }
