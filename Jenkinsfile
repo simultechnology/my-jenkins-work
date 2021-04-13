@@ -7,11 +7,13 @@ pipeline {
             }
         }
         stage( {
-            script {
-                sh """
-                poetry install
-                poetry run isort src
-                """
+            steps {
+                script {
+                    sh """
+                    poetry install
+                    poetry run isort src
+                    """
+                }
             }
         })
     }
