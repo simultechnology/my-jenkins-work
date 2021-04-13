@@ -6,7 +6,7 @@ pipeline {
                 echo 'Hello world!'
             }
         }
-        stage( {
+        stage('poetry run') {
             steps {
                 script {
                     sh """
@@ -15,6 +15,6 @@ pipeline {
                     """
                 }
             }
-        })
+        }
     }
 }
