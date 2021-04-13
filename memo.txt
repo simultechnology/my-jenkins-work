@@ -1,0 +1,5 @@
+admin password
+DCEPnLh5jp4FukxHuPsEeL
+
+http://fc00:f853:ccd:e793::3:/login
+kubectl get pods -n jenkins
